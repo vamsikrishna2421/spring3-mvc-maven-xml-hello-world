@@ -4,7 +4,7 @@
 	<groupId>com.madhu</groupId>
 	<artifactId>spring3-mvc-maven-xml-hello-world</artifactId>
 	<packaging>war</packaging>
-	<version>1.2</version>
+	<version>1.2-SNAPSHOTS</version>
 	<name>spring3 mvc maven</name>
 
 	<properties>
@@ -26,14 +26,15 @@
 			<artifactId>jstl</artifactId>
 			<version>${jstl.version}</version>
 		</dependency>
-
-	</dependencies>
-	<distributionManagement>
-   		<snapshotRepository>
-     			<id>maven-snapshots</id>
-      			<url>http://f4218fe2.ngrok.io:8081/repository/maven-snapshots/</url>
-   		</snapshotRepository>
-	</distributionManagement>
+		<repositories>
+			<repository>
+				<id>maven-snapshots</id>
+				<url>http://f4218fe2.ngrok.io:8081/repository/maven-snapshots/</url>
+				<snapshots>
+					<enabled>true</enabled>
+				</snapshots>
+			</repository>
+		</repositories>
 
 
 	<build>
