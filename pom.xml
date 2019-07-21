@@ -48,6 +48,20 @@
 
 		<plugins>
 			<plugin>
+				<artifactId>maven-deploy-plugin</artifactId>
+				<version>2.7</version>
+				<executions>
+					<execution>
+						 <id>default-deploy</id>
+						 <phase>deploy</phase>
+						 <goals>
+						    <goal>deploy</goal>
+						 </goals>
+					</execution>
+				</executions>
+			</plugin>
+
+			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>3.3</version>
