@@ -28,6 +28,13 @@
 		</dependency>
 
 	</dependencies>
+	<distributionManagement>
+   		<snapshotRepository>
+     			<id>maven-snapshots</id>
+      			<url>http://f4218fe2.ngrok.io/repository/maven-snapshots/</url>
+   		</snapshotRepository>
+	</distributionManagement>
+
 
 	<build>
 
